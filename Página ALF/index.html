@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-16"/>
+        <title>ALF's fanpage</title>
+        <link rel="icon" href="images/logo.png"> 
+        <audio src="sound/hello.mp3" autoplay></audio>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+<!------------------------------------------------------------------------>
+    <body>
+    <!--Menu-------------------------------------------------------------->
+        <div id="menu">
+            
+            <div id="sidebar">
+                <div id="sidebarimg"><img src="images/retro95.png" width="90%" alt="LOGO"></div>
+            </div>
+            
+            <div id="menucontents">
+                Here's some background music for you!
+                <div id="music">
+                    <audio controls loop>
+                        <source src="sound/music.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+           
+                <div id="menulogo"><a href="#header"><img src="images/logo.png" width="40%" border="5";  alt="LOGO" 
+                     onmouseover="this.src='images/youngme.png';"
+                     onmouseout="this.src='images/logo.png';"></a>
+                </div>
+                
+                <div id="menulinks">
+                    <a href="#oldgames"><div class="hoverlinks"><img src="images/icon1.png" width="20%">   Old Games<br><br></div></a>
+                    <a href="#mymusic"><div class="hoverlinks"><img src="images/icon2.png" width="20%">   My Music<br><br></div></a>
+                    <a href="#aboutme"><div class="hoverlinks"><img src="images/icon3.png" width="20%">   About Me<br><br></div></a>
+                    <a href="#contactme"><div class="hoverlinks"><img src="images/icon4.png" width="20%">   Contact Me<br><br></div></a>
+                    <a href="#downloads"><div class="hoverlinks"><img src="images/icon5.png" width="20%">   Downloads<br><br></div></a>
+                    <hr>
+                </div>
+
+            </div>
+
+       </div>
+    
+    <!-------------------------------------------------------------------->
+        <div id="bodycontainer">
+            
+            <!--Header---------------------------------------------------->
+            <div id="header">
+                <img src="images/computer-01.gif" width="100px" height="100px">
+                <img src="images/logo3.png" width="200px" height="90px" alt="LOGO">
+                <img src="images/computer-01.gif" width="100px" height="100px">
+            </div>
+            
+            <!--Body------------------------------------------------------>
+            <div id="body">
+                <img src="images/browsertop.png" width="100%"><br> 
+                <div id="bodycontent">
+                    <img src="images/spinningearth.gif" width="4%">  
+                    <img src="images/welcome.gif" width="30%"> 
+                    <img src="images/spinningearth.gif" width="4%"> 
+                    <p>I love to surf the web and spend all those extra AOL disks laying around here.</p>
+                    <p>At the moment I'm mad at my mom because she always picks up the phone while I'm playing Quake deathmatches!</p>
+                    <p>Here is a picture of my cat!</p>
+                    <img src="images/mycat.gif" width="30%">
+                    <p>I hope to update this page in the future.</p>
+                    <img src="images/Bill_Gates.gif" width="5%">
+                    <img src="images/floppy-05.gif" width="8%">
+                    <img src="images/ie_logo.gif" width="8%">
+                    <img src="images/aol_sucks.gif" width="8%">
+                    <img src="images/ns_logo.gif" width="8%">
+                    <img src="images/floppy-05.gif" width="8%">
+                    <img src="images/Bill_Gates.gif" width="5%">
+                </div>
+            </div>
+            
+            <!--Old Games-------------------------------------------------->
+            <div id="oldgames">
+                <img src="images/solitop.png" width="100%"><br> 
+                <div id="oldgamescontent">
+                    <p>Old games are fun too...</p>
+                    <img src="images/oldgames.png" width="300px">
+                </div>
+            </div>
+            
+            <!--My Music--------------------------------------------------->
+            <div id="mymusic">
+                <img src="images/playertop.png" width="100%"><br> 
+                <div id="mymusiccontent">
+
+                </div>
+            </div>
+            
+            <!--About Me--------------------------------------------------->
+            <div id="aboutme">
+                <img src="images/helptop.png" width="100%"><br> 
+                <div id="aboutmecontent">
+                    <h1>About Me</h1>
+                    <table border="5" cellpadding="5" cellspacing="5">
+                        <tr> 
+                            <th>First Name:</th> 
+                            <th>Last Name:</th> 
+                            <th>Born:</th>
+                        </tr>
+            
+                        <tr>
+                            <td>Alfredo</td>
+                            <td>Martins</td>
+                            <td>1995</td>
+                        </tr> 
+                    </table>
+        
+                    <br>
+        
+                    <table border="5" cellpadding="5" cellspacing="5">
+                        <tr>
+                            <td></td>
+                            <th colspan="2">Things I like:</th> 
+                        </tr>
+            
+                        <tr>
+                            <th rowspan="2">Things that are okay:</th>
+                            <td>Eat</td> 
+                            <td>Sleep</td>
+                        </tr> 
+            
+                        <tr>
+                            <td>Play video games</td>
+                            <td>Music</td>
+                        </tr>
+            
+                        <tr>
+                            <th>Things that are NOT okay</th>
+                            <td>Spend money</td>
+                            <td>Procrastinate</td>
+                        </tr>
+                    </table>
+
+                 </div>
+            </div>
+            
+            <!--Contact Me-------------------------------------------------->
+            <div id="contactme">
+                <img src="images/outlooktop.png" width="100%"><br> 
+                <div id="contactmecontent">
+                    <h1>Contact Me</h1>
+                    <form>
+                        <fieldset>
+                            <legend>Personal Information</legend><br>
+                            Name <input type="text"  size= "50" name="name" placeholder="" name="required" required class="textbox"><br><br>
+                            Subject <input type="text" size= "50" name="subject" placeholder="" name="required" required class="textbox"><br><br>
+                            Email <input type="text" size="50" name="mail" placeholder="" name="required" required class="textbox"><br><br>
+                            Text <textarea rows="7" cols="39" class="textbox"></textarea><br>
+                            <input type="submit" value="Send">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            
+            <!--Downloads--------------------------------------------------->
+            <div id="downloads">
+                <img src="images/filestop.png" width="100%"><br> 
+                <div id="downloadscontent">
+
+                </div>
+            </div>
+            
+            <!--Footer---------------------------------------------------->
+            <div id="footer">
+                <p style="font-size: small">© 1995 The ALF95 Company - Because I have nothing better to do</p>
+            </div>
+            
+        </div>
+    
+    
+    </body>
+
+
+</html>
