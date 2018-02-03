@@ -37,6 +37,9 @@ Table {
     margin: 0px auto; 
 }
 
+/*Popups------------*/
+
+
 /*Menu---------------------------------------*/
 #menu {
     background-color: #d3d0c9;
@@ -131,7 +134,6 @@ audio {
     background-color: #008000;
     border: 10px ridge grey;
     min-height: 100px;
-    min-width: 300px;
     width: 60%;
 }
 
@@ -150,7 +152,7 @@ audio {
 }
 
 #mymusiccontent {
-    text-align: center;
+    text-align: left;
 }
 
 /*About Me-------------------------------------*/
@@ -167,6 +169,7 @@ audio {
 
 #aboutmecontent {
     text-align: center;
+    padding: 5%;
 }
 
 /*Contact Me-----------------------------------*/
@@ -180,15 +183,14 @@ audio {
 
 #contactmecontent {
     overflow: auto;
-    text-align: left;
-    padding-left: 5%;
+    text-align: center;
 }
 
 form {
     padding-bottom: 5%;
-    width: 30%;
-    margin: left;
-    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*Downloads-------------------------------------*/
