@@ -222,14 +222,14 @@
                 <img src="images/outlooktop.png" width="100%"><br> 
                 <div id="contactmecontent">
                     <h1>Contact Me</h1>
-                    <form>
-                            ---Name---<br> <input type="text"  size="50" name="name" placeholder="" name="required" required class="textbox"><br><br>
+                    <form method="POST" name="contactform" action="contact_form.php">
+                            ---Name---<br> <input type="text"  size="50" name="name" name="required" required class="textbox"><br><br>
                         
-                            ---Email---<br> <input type="text" size="50" name="mail" placeholder="" name="required" required class="textbox"><br><br>
+                            ---Email---<br> <input type="text" size="50" name="mail" name="required" required class="textbox"><br><br>
                         
-                            ---Subject---<br> <input type="text" size="50" name="subject" placeholder="" name="required" required class="textbox"><br><br>
+                            ---Subject---<br> <input type="text" size="50" name="subject" name="required" required class="textbox"><br><br>
                             
-                            ---Text---<br> <textarea rows="7" cols="39" class="textbox"></textarea><br>
+                            ---Text---<br> <textarea rows="7" cols="39" name="text" class="textbox"></textarea><br>
                             <input type="submit" value="Send">
                     </form>
                 </div>
