@@ -1,13 +1,26 @@
-<?php
-	$file = 'tentativas_contactos.txt';
-	// Open the file to get existing content
-	$current = file_get_contents($file);
-	// Append a new person to the file
-	$current .= "/n";
-	$current .= "NOME:" + $_POST['name'] + "/n";
-	$current .= "EMAIL:" + $_POST['email'] + "/n";
-	$current .= "ASSUNTO:" + $_POST['subject'] + "/n";
-	$current .= "MENSAGEM:" + $_POST['message'] + "/n";
-	// Write the contents back to the file
-	file_put_contents($file, $current);
+<?php if(isset($_POST['submit'])){ 
+$name=$_POST['name']; 
+$email=$_POST['email'];
+    
+//send mail 
+$to='barroselasnow@hotmail.com'; 
+$subject='New Subscriber'; 
+$body='<html> 
+<body> 
+<h3>Feedback</h3> 
+<hr>
+    
+<p> Name : '.$name.'</p> 
+<br> 
+    
+<p> Email : '.$email.'</p> 
+
+</body> 
+    
+</html>';
+    
+$headers ="From:".$name."<".$email.">\r\n";
+$headers .="reply-To:".$email."\r\n"; 
+$headers .="NINE-Version: 1.0\r\n"; 
+$headers .="Content-type: text/html; charset=utf-8";
 ?>
