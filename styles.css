@@ -37,8 +37,13 @@ Table {
     margin: 0px auto; 
 }
 
-/*Popups------------*/
-
+/*Clippy------------*/
+#clippy {
+    width: 10%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
 
 /*Menu---------------------------------------*/
 #menu {
@@ -138,8 +143,19 @@ audio {
 }
 
 #oldgamescontent {
-    padding-bottom: 5%;
-    text-align: center;
+    padding: 2%;
+    overflow: auto;
+}
+
+#gamesimgleft {
+    width: 48%;
+    float: left;
+    
+}
+
+#gamesimgright {
+    width: 48%;
+    float: right;
 }
 
 /*My Music-------------------------------------*/

@@ -6,9 +6,34 @@
         <link rel="icon" href="images/logo.png"> 
         <audio src="sound/hello.mp3" autoplay></audio>
         <link href="styles.css" rel="stylesheet">
+        
+        <!--script for audio sound effects------------------->
+            <script>
+            function play(){
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+            </script>
+        <!--------------------------------------------------->
     </head>
 <!------------------------------------------------------------------------>
     <body>
+        
+    <!--Clippy-->
+        <div id="clippy">
+            <img src="images/clippy.gif" width="100%" value="PLAY"  onclick="play()"
+                 onmouseover="this.src='images/clippymessage.png';"
+                 onmouseout="this.src='images/clippy.gif';">
+            <audio id="audio" src="sound/boom.mp3" ></audio>
+        </div>
+        
+        <script>
+        document.getElementById("clippy").onclick = function(e) {
+            e.target.style.visibility = 'hidden';
+        }
+        </script>
+
+        
     <!--Menu-------------------------------------------------------------->
         <div id="menu">
             
@@ -60,7 +85,7 @@
                     <img src="images/welcome.gif" width="30%"> 
                     <img src="images/spinningearth.gif" width="4%"> 
                     <p>I love to surf the web and spend all those extra AOL disks laying around here.</p>
-                    <p>At the moment I'm mad at my mom because she always picks up the phone while I'm playing Quake deathmatches!</p>
+                    <p>Having so much fun with my 28k modem, enjoying all this sweet dial-up!</p>
                     <p>Here is a picture of my cat!</p>
                     <img src="images/mycat.gif" width="30%">
                     <p>I hope to update this page in the future.</p>
@@ -77,9 +102,16 @@
             <!--Old Games-------------------------------------------------->
             <div id="oldgames">
                 <img src="images/solitop.png" width="100%"><br> 
-                <div id="oldgamescontent">
-                    <p>Old games are fun too...</p>
-                    <img src="images/oldgames.png" width="50%" style="border: 5px ridge grey;">
+                <div id="oldgamescontent">  
+                    <div id="gamesimgleft">
+                        <img id="adventures" src="images/adventures.gif" width="100%">
+                        <img if="fps" src="images/fps.gif" width="100%">
+                        <img if="fps" src="images/windos.gif" width="100%">
+                    </div>
+                    <div id="gamesimgright">
+                        <img src="images/oldgames.png" width="100%">
+                    </div>
+                        <img src="images/retrocharacters.png" width="100%">
                 </div>
             </div>
             
