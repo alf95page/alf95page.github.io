@@ -43,19 +43,21 @@ Table {
     position: fixed;
     right: 0;
     bottom: 0;
+    z-index: 9999;
 }
 
 /*Menu---------------------------------------*/
 #menu {
     background-color: #d3d0c9;
-    width: 20%;
+    width: 16.5%;
     height: 100%;
+    margin-left: 3.5%;
     position: fixed;
     left: 0;
     float: left;
     border-right: 10px ridge grey;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #music {
@@ -68,20 +70,17 @@ audio {
     width: 100%;
 }
 
-#menucontents {
-    padding-left:20%;
-}
-
 #menulogo {
-    padding-top: 20px;
+    padding-top: 5%;
 }
 
 #sidebar {
-    width:20%;
+    width:3.5%;
     height:100%;
     background-color: #808082;
     float: left;
-    position: relative;
+    position: fixed;
+    z-index: 1;
 }
 
 #sidebarimg {
@@ -90,7 +89,7 @@ audio {
 }
 
 #menulinks {
-    padding-top: 20%;
+    padding-top: 5%;
     text-align: left;
 }
 
@@ -117,7 +116,7 @@ audio {
 /*Body----------------------------------------*/
 #body {
     margin: 6%;
-    background-color: green;
+    background-color: black;
     background-image: url(images/space.jpg);
     border: 10px ridge grey;
     min-height: 500px;
@@ -193,7 +192,7 @@ audio {
     margin-left: 25%;
     background-color: white;
     border: 10px ridge grey;
-    min-height: 500px;
+    min-height: 200px;
     width: 60%;
 }
 
@@ -214,14 +213,30 @@ form {
     margin: 8%;
     background-color: white;
     border: 10px ridge grey;
-    min-height: 500px;
+    min-height: 200px;
     width: 60%;
-    background-image: url(images/underconstruction.gif);
     background-size: 50%;
 }
 
 #downloadscontent {
     text-align: center;
+    overflow: auto;
+}
+
+.file {
+    display: inline-block;
+    height: 10%;
+    width: 20%;
+    margin: 1%;
+    min-height: 50px;
+    min-width: 100px;
+    vertical-align:middle
+    
+}
+
+.file img {
+    height: 80%;
+    min-width: 50px;
 }
 
 /*Footer--------------------------------------*/
