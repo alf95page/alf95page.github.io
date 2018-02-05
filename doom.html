@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-16"/>
+        <title>DOOM</title>
+        <link rel="icon" href="images/logo.png"> 
+        <link href="styles.css" rel="stylesheet">
+        
+        <!--Game--------------------------------------------->
+        <style type="text/css">
+            .dosbox-container { width: 640px; height: 400px; margin: 0 auto; }
+            .dosbox-container > .dosbox-overlay { background: url(images/doom.png); }
+        </style>
+        <!--Game--------------------------------------------->
+
+    </head>
+<!------------------------------------------------------------------------>
+    <body> 
+    <!-------------------------------------------------------------------->
+        <div id="bodycontainer" style="width: 100%; padding-left: 0;">
+            
+            <!--Header---------------------------------------------------->
+            <div id="header" style="padding-left: 0;">
+                <img src="images/computer-01.gif" width="100px" height="100px">
+                <img src="images/logo3.png" width="200px" height="90px" alt="LOGO">
+                <img src="images/computer-01.gif" width="100px" height="100px">
+            </div>
+            
+        <!--Body------------------------------------------------------>
+        <div id="body" style="min-width: 640px; min-height: 400px; margin: 2%;">
+                
+            <div id="bodycontent" style="padding-top: 0; padding-bottom: 0;">
+                    <p style="font-size: 30px">DOOM</p>
+            <!--Game------------------------------------>      
+            <div id="dosbox"></div>
+            <br/>
+            <button onclick="dosbox.requestFullScreen();">Make fullscreen</button>
+     
+            <script type="text/javascript" src="js/js-dos-api.js"></script>
+            <script type="text/javascript">
+                var dosbox = new Dosbox({
+                    id: "dosbox",
+                    onload: function (dosbox) {
+                        dosbox.run("games/doom.zip", "./DOOM.EXE");
+                    },
+                    onrun: function (dosbox, app) {
+                        console.log("App '" + app + "' is runned");
+                    }
+                });
+            </script>
+            <!--Game------------------------------------>
+            </div>
+                <p style="text-align: center;"><a href="index.html"><input type="button" value="Back to main page"></a></p>
+         </div>
+            
+        <!--Footer---------------------------------------------------->
+            <div id="footer" style="padding-left: 0; padding-top: 0;">
+                <p style="font-size: small">© 1995 The ALF95 Company - Because I have nothing better to do</p>
+            </div>
+            
+        </div>
+<!------------------------------------------------------------>
+    </body>
+</html>

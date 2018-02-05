@@ -57,7 +57,7 @@ Table {
     float: left;
     border-right: 10px ridge grey;
     text-align: center;
-    overflow: auto;
+    overflow: scroll;
 }
 
 #music {
@@ -110,7 +110,6 @@ audio {
     text-align: center;
     border-bottom: 10px ridge grey;
     padding-left: 20px;
-    padding-top: 20px;
 }
 
 /*Body----------------------------------------*/
@@ -155,6 +154,34 @@ audio {
 #gamesimgright {
     width: 48%;
     float: right;
+}
+
+#oldgames p {
+    font-size: large;
+    text-align: center;
+}
+
+#dosgamescontainer {
+    border: 5px ridge grey;
+    background-color: black;
+
+}
+
+#dosgamescontainer a{
+    font-family: monospace;
+    color: #aaaaaa;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+#fakedoswindow {
+    width: 60%;
+    padding: 2%;
+    padding-left:0;
+    background-color: #0000aa;
+    border: double 10px white; 
+    color: white;
+    word-wrap: break-word;
 }
 
 /*My Music-------------------------------------*/
@@ -236,7 +263,8 @@ form {
 
 .file img {
     height: 80%;
-    min-width: 50px;
+    width: 30%;
+    min-width: 30px;
 }
 
 /*Footer--------------------------------------*/
