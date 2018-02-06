@@ -41,7 +41,7 @@
                 var dosbox = new Dosbox({
                     id: "dosbox",
                     onload: function (dosbox) {
-                        dosbox.run("games/keen.zip", "./KEEN1.EXE");
+                        dosbox.run("https://dl.dropboxusercontent.com/s/nt4ucoi4xjekwkv/keen.zip?dl=1", "./KEEN1.EXE");
                     },
                     onrun: function (dosbox, app) {
                         console.log("App '" + app + "' is runned");

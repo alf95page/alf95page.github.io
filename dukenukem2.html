@@ -41,7 +41,7 @@
                 var dosbox = new Dosbox({
                     id: "dosbox",
                     onload: function (dosbox) {
-                        dosbox.run("games/duke2.zip", "./nukem2.exe");
+                        dosbox.run("https://www.dl.dropboxusercontent.com/s/h45k8uvvin0p8b1/duke2.zip?dl=1", "./nukem2.exe");
                     },
                     onrun: function (dosbox, app) {
                         console.log("App '" + app + "' is runned");

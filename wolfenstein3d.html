@@ -41,7 +41,7 @@
                 var dosbox = new Dosbox({
                     id: "dosbox",
                     onload: function (dosbox) {
-                        dosbox.run("games/wolf3d.zip", "./Wolf3d.exe");
+                        dosbox.run("https://dl.dropboxusercontent.com/s/8prr5ixy577nhob/wolf3d.zip?dl=1", "./Wolf3d.exe");
                     },
                     onrun: function (dosbox, app) {
                         console.log("App '" + app + "' is runned");
