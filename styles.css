@@ -37,7 +37,7 @@ Table {
     margin: 0px auto; 
 }
 
-/*Clippy------------*/
+/*Clippy---------------*/
 #clippy {
     width: 10%;
     position: fixed;
@@ -112,8 +112,8 @@ audio {
     padding-left: 20px;
 }
 
-/*Body----------------------------------------*/
-#body {
+/*Welcome-------------------------------------*/
+#welcome {
     margin: 6%;
     background-color: black;
     background-image: url(images/space.jpg);
@@ -123,7 +123,7 @@ audio {
     font-family: cursive;
 }
 
-#bodycontent {
+#welcomecontent {
     padding-top: 5%;
     padding-bottom:2%;
     text-align: center;
@@ -133,7 +133,8 @@ audio {
 
 /*Old Games------------------------------------*/
 #oldgames {
-    margin: 3%;
+    margin: 4%;
+    margin-left: 15%;
     background-color: #008000;
     border: 10px ridge grey;
     min-height: 100px;
@@ -184,17 +185,31 @@ audio {
     word-wrap: break-word;
 }
 
-/*My Music-------------------------------------*/
+/*My Music + Random Image Changer---------------*/
+#musicrandomimagewrapper {
+    text-align: center;
+}
 #mymusic {
-    margin-left: 30%;
+    display:inline-block;
     background-color: #c0c0c0;
     border: 10px ridge grey;
     min-height: 500px;
+    vertical-align: middle;
     width: 60%;
 }
 
 #mymusiccontent {
-    text-align: left;
+    text-align: center;
+}
+
+/*Random Image Changer-*/
+#randomimage {
+    background-color: #c0c0c0;
+    border: 10px ridge grey;
+    display:inline-block;
+    vertical-align: middle;
+    width: 25%;
+    margin: 2%;
 }
 
 /*About Me-------------------------------------*/

@@ -6,6 +6,9 @@
         <link rel="icon" href="images/logo.png"> 
         <audio src="sound/hello.mp3" autoplay></audio>
         <link href="styles.css" rel="stylesheet">
+        <base target="_blank">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type='text/javascript' src="js/randomimagechanger.js"></script>
         
         <!--script for audio sound effects------------------->
             <script>
@@ -15,9 +18,21 @@
             }
             </script>
         <!--------------------------------------------------->
+        
+        <!--script for removing #hash to URL----------------->
+            <script type='text/javascript'>
+                jQuery(document).ready(function($) {
+
+                    $(".scroll").click(function(event){
+                        event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+                    });
+                });
+        </script>
+        <!--------------------------------------------------->
     </head>
 <!------------------------------------------------------------------------>
-    <body>
+    <body onload="newImage()">
         
     <!--Clippy-->
         <div id="clippy">
@@ -47,22 +62,25 @@
                         <source src="sound/music.mp3" type="audio/mpeg">
                     </audio>
                 </div>
-           
-                <div id="menulogo"><a href="#header"><img src="images/logo.png" width="40%" border="5";  alt="LOGO" 
+                
+            <nav>
+                <div id="menulogo"><a class="scroll" href="#header" target="_self"><img src="images/logo.png" width="40%" border="5";  alt="LOGO" 
                      onmouseover="this.src='images/logoanim.gif';"
                      onmouseout="this.src='images/logo.png';"></a>
                 </div>
                 
                 <div id="menulinks">
-                    <a href="#oldgames"><div class="hoverlinks"><img src="images/icon1.png" width="20%">   Old Games<br><br></div></a>
-                    <a href="#mymusic"><div class="hoverlinks"><img src="images/icon2.png" width="20%">   My Music<br><br></div></a>
-                    <a href="#aboutme"><div class="hoverlinks"><img src="images/icon3.png" width="20%">   About Me<br><br></div></a>
-                    <a href="#contactme"><div class="hoverlinks"><img src="images/icon4.png" width="20%">   Contact Me<br><br></div></a>
-                    <a href="#downloads"><div class="hoverlinks"><img src="images/icon5.png" width="20%">   Files / Downloads<br><br></div></a>
+                    <a class="scroll" href="#oldgames" target="_self"><div class="hoverlinks"><img src="images/icon1.png" width="20%">   Old Games<br><br></div></a>
+                    <a class="scroll" href="#mymusic" target="_self"><div class="hoverlinks"><img src="images/icon2.png" width="20%">   My Music<br><br></div></a>
+                    <a class="scroll" href="#aboutme" target="_self"><div class="hoverlinks"><img src="images/icon3.png" width="20%">   About Me<br><br></div></a>
+                    <a class="scroll" href="#contactme" target="_self"><div class="hoverlinks"><img src="images/icon4.png" width="20%">   Contact Me<br><br></div></a>
+                    <a class="scroll" href="#downloads" target="_self"><div class="hoverlinks"><img src="images/icon5.png" width="20%">   Files / Downloads<br><br></div></a>
                     <hr><br>
                     <img src="images/underconstruction.gif" width="100%">
-                    <p style="text-align: center; font-size: small">Last updated: 05/02/18</p> 
+                    <p style="text-align: center; font-size: small">Last updated: 06/02/18</p> 
                 </div>
+            </nav>
+                
             </div>
     
     <!-------------------------------------------------------------------->
@@ -78,10 +96,10 @@
                         
             <p style="text-align: center"><b>OPTIMIZED FOR FIREFOX ONLY</b></p>
             
-            <!--Body------------------------------------------------------>
-            <div id="body">
-                <img src="images/browsertop.png" width="100%"><br> 
-                <div id="bodycontent">
+            <!--Welcome--------------------------------------------------->
+            <div id="welcome">
+                <img src="images/browsertop.png" width="100%" style="vertical-align: top;"><br> 
+                <div id="welcomecontent">
                     <img src="images/spinningearth.gif" width="4%">  
                     <img src="images/welcome.gif" width="30%"> 
                     <img src="images/spinningearth.gif" width="4%"> 
@@ -102,7 +120,7 @@
             
             <!--Old Games-------------------------------------------------->
             <div id="oldgames">
-                <img src="images/solitop.png" width="100%"><br> 
+                <img src="images/solitop.png" width="100%" style="vertical-align: top;"><br> 
                 <div id="oldgamescontent">  
                     <div id="gamesimgleft">
                         <img id="adventures" src="images/adventures.gif" width="100%">
@@ -133,14 +151,24 @@
 
                     <a href="dukenukem2.html">C:\DOSGAMES\DUKE_NUKEM_II</a><br><br>
                     
-                    <a href="dukenukem3d.html">C:\DOSGAMES\DUKE_NUKEM_3D</a><br><br>
+                    <a href="dukenukem3d.html" >C:\DOSGAMES\DUKE_NUKEM_3D</a><br><br>
                 
                 </div> 
             </div>
             
             <!--My Music--------------------------------------------------->
+            <div id="musicrandomimagewrapper">
+                            
+                <!--Random Image Changer-------------------------------------->
+                <div id="randomimage">
+                    <img src="images/vaportop.png" width="100%" style="vertical-align: top;">
+                    <img src="images/randomimages/01.jpg" name="theImage" id="theImage" width="100%">
+            
+                </div> 
+                <!----->
+                
             <div id="mymusic">
-                    <img src="images/playertop.png" width="100%">
+                    <img src="images/playertop.png" width="100%" style="vertical-align: top;">
                 <div id="mymusiccontent">
                     <!--?dl=0 ?dl=1 ?raw=1 ?raw=0-->
                     
@@ -213,14 +241,16 @@
                         <source src="https://dl.dropboxusercontent.com/s/j2hti2h33ske70o/ALF95%20-%20Hallway%20Wanderer.mp3" type="audio/mpeg">
                     </audio>
                     <hr>
-                    <p>More tracks: -link-</p>
+                    <p><a href="https://www.dropbox.com/sh/jlqcuv8nzcw94si/AADMvxvcEFqnVGhJtSsMjTwfa?dl=0"><u>Click here for more music</u></a></p>
                     
                 </div>
+            </div>
+
             </div>
             
             <!--About Me--------------------------------------------------->
             <div id="aboutme">
-                <img src="images/helptop.png" width="100%"><br> 
+                <img src="images/helptop.png" width="100%" style="vertical-align: top;"><br> 
                 <div id="aboutmecontent">
                     <h1>About Me</h1>
                     <table border="5" cellpadding="5" cellspacing="5">
@@ -274,7 +304,7 @@
             
             <!--Contact Me-------------------------------------------------->
             <div id="contactme">
-                <img src="images/outlooktop.png" width="100%"><br> 
+                <img src="images/outlooktop.png" width="100%" style="vertical-align: top;"><br> 
                 <div id="contactmecontent">
                     <h1>Contact Me</h1>
                     <p>Discord: Super Jesus#0758</p>
@@ -287,7 +317,7 @@
             
             <!--Downloads--------------------------------------------------->
             <div id="downloads">
-                <img src="images/filestop.png" width="100%"><br> 
+                <img src="images/filestop.png" width="100%" style="vertical-align: top;"><br> 
                 <div id="downloadscontent">
                 
                     <a href="https://www.dropbox.com/s/wk970jl8rz39k4b/OutaTime.mp4?dl=0"><div class="file">
@@ -316,7 +346,7 @@
                     
                 </div>
             </div>
-            
+
             <!--Footer---------------------------------------------------->
             <div id="footer">
                 <p style="font-size: small">© 1995 The ALF95 Company - Because I have nothing better to do</p>
