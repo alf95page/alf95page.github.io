@@ -8,7 +8,6 @@
         <link href="styles.css" rel="stylesheet">
         <base target="_blank">
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-        <script type='text/javascript' src="js/randomimagechanger.js"></script>
         
         <!--script for audio sound effects------------------->
             <script>
@@ -58,7 +57,7 @@
                 <br>
                 Here's some background music for you!
                 <div id="music">
-                    <audio controls loop>
+                    <audio controls loop preload="none">
                         <source src="sound/music.mp3" type="audio/mpeg">
                     </audio>
                 </div>
@@ -73,11 +72,11 @@
                     <a class="scroll" href="#oldgames" target="_self"><div class="hoverlinks"><img src="images/icon1.png" width="20%">   Old Games<br><br></div></a>
                     <a class="scroll" href="#mymusic" target="_self"><div class="hoverlinks"><img src="images/icon2.png" width="20%">   My Music<br><br></div></a>
                     <a class="scroll" href="#aboutme" target="_self"><div class="hoverlinks"><img src="images/icon3.png" width="20%">   About Me<br><br></div></a>
-                    <a class="scroll" href="#contactme" target="_self"><div class="hoverlinks"><img src="images/icon4.png" width="20%">   Contact Me<br><br></div></a>
-                    <a class="scroll" href="#downloads" target="_self"><div class="hoverlinks"><img src="images/icon5.png" width="20%">   Files / Downloads<br><br></div></a>
+                    <a class="scroll" href="#alf95tv" target="_self"><div class="hoverlinks"><img src="images/icon5.png" width="20%">   ALF95 TV<br><br></div></a>
+                    <a class="scroll" href="#downloads" target="_self"><div class="hoverlinks"><img src="images/icon4.png" width="20%">   Files / Downloads<br><br></div></a>
                     <hr><br>
                     <img src="images/underconstruction.gif" width="100%">
-                    <p style="text-align: center; font-size: small">Last updated: 06/02/18</p> 
+                    <p style="text-align: center; font-size: small">Last updated: 08/02/18</p> 
                 </div>
             </nav>
                 
@@ -252,7 +251,7 @@
             <div id="aboutme">
                 <img src="images/helptop.png" width="100%" style="vertical-align: top;"><br> 
                 <div id="aboutmecontent">
-                    <h1>About Me</h1>
+                    <h2>About Me</h2>
                     <table border="5" cellpadding="5" cellspacing="5">
                         <tr> 
                             <th>First Name:</th> 
@@ -298,21 +297,28 @@
                     <p>I love to write music (mostly MIDIs) inspired by old video game soundtracks.</p>
                     <p>I love video games, but mainly old retro console and pc games.</p>
                     <p>My consoles: NES, SNES, N64, GC, Wii, Saturn, Dreamcast, PS1, PS2, Original Gameboy, Gameboy Pocket, Gameboy Color, Gameboy Advance, Gameboy Advance SP, Gameboy Micro, DS Lite, 3DS, 3DS XL, PSP, Wonderswan Color.</p>
+                    
+                    <br>
 
-                 </div>
-            </div>
-            
-            <!--Contact Me-------------------------------------------------->
-            <div id="contactme">
-                <img src="images/outlooktop.png" width="100%" style="vertical-align: top;"><br> 
-                <div id="contactmecontent">
-                    <h1>Contact Me</h1>
-                    <p>Discord: Super Jesus#0758</p>
+                    <h3>Contact Me</h3>
                     <p>Email: barroselasnow@hotmail.com</p>
                     <p>or</p>
                     <p>Click the button to launch an email application: 
                     <a href="mailto:barroselasnow@hotmail.com"><input type="button" value="Send Email"></a></p>
-                </div>
+                    
+                 </div>
+            </div>
+            
+            <!--ALF95 TV----------------------------------------------------->
+            <div id="alf95tv">
+                <img src="images/mediatop.png" width="100%" style="vertical-align: top;"><br> 
+                <br>
+                <h3>Enjoy random 90s TV commercials!</h3>
+                <p>(requires HTML5 support to work)</p>
+                
+                <a href="alf95tv.html"><img src="images/alf95tv.png" width="60%" style="border: 5px ridge grey;"></a>
+                
+                <p>(click the image to open a new window)</p>
             </div>
             
             <!--Downloads--------------------------------------------------->
@@ -353,7 +359,8 @@
             </div>
             
         </div>
-    
+        
+        <script type="text/javascript" src="js/randomimagechanger.js"></script>
     </body>
 
 

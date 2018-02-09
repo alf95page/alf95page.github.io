@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-16"/>
+        <title>ALF95 TV</title>
+        <link rel="icon" href="images/logo.png"> 
+        <link href="styles.css" rel="stylesheet">
+        
+        <style>
+            body {
+                min-width: 700px;  
+            }
+            
+            #welcome {
+                font-family: "Arial", sans-serif;
+                overflow: auto;
+                margin: 2%;
+            }
+            
+            #welcomecontent {
+                font-weight: normal;
+                font-size: 18px;
+            }
+            
+            #television {
+                border: ridge 5px grey;
+                background-color: orange;
+                background-image:url('images/tvframe.png');
+                background-size: 100% 100%;
+                display: inline-block;
+                width: 640px;
+                height: 504px;
+                padding-top: 56px;
+            }
+            
+            #televisionlinks {
+                border: ridge 5px grey;
+                background-color: #d3d0c9;
+                background-image:url('images/tvremote.png');
+                background-size: 100% 100%;
+                color: black;
+                text-align: left;
+                display: inline-block;
+                height: 560px;
+                width: 222px;
+                vertical-align: top;
+                margin-left: 5px;
+                overflow-y: scroll;
+            }
+            
+            #televisionlinks p{
+                line-height: 5px;
+                padding-left: 10px;
+                font-size: 16px;
+            }
+        
+        </style>
+
+    </head>
+<!------------------------------------------------------------------------>
+    <body> 
+    <!-------------------------------------------------------------------->
+            <!--Header---------------------------------------------------->
+            <div id="header" style="padding-left: 0;">
+                <img src="images/computer-01.gif" width="100px" height="100px">
+                <img src="images/logo3.png" width="200px" height="90px" alt="LOGO">
+                <img src="images/computer-01.gif" width="100px" height="100px">
+            </div>
+            
+        <!--Body------------------------------------------------------>
+        <div id="welcome">
+                
+            <div id="welcomecontent" style="padding-top: 0; padding-bottom: 0;">
+            <p style="font-size: 30px">ALF95 TV</p>
+
+            
+            <div id="television">
+                
+             <!--Video-->
+                <video id="videoclip" width="512" height="384" controls preload="none" poster="images/static.gif">
+                    
+                    <source id="mp4video" src="https://dl.dropboxusercontent.com/s/734t75ww7a8nlh7/Microsoft%20ad.mp4?dl=1">
+                    Your browser does not support the video tag.
+                    
+                </video>
+            <!--------->
+            </div>
+            
+            <div id="televisionlinks">
+            <hr>
+            <details>
+                <summary><b>Microsoft</b></summary>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/734t75ww7a8nlh7/Microsoft%20ad.mp4?dl=1" class="videolink">Microsoft ad</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/ya9fxqi46i609uh/Microsoft%20Office.mp4?dl=1" class="videolink">Microsoft Office</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/2uemqkzme0ywj2z/Windows%2095.mp4?dl=1" class="videolink">Windows 95 (1)</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/5esn3fgt95okvib/Windows%2095%202.mp4?dl=1" class="videolink">Windows 95 (2)</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/j3xuzlefqiwx7f1/Windows%2095%20Start%20Me%20Up.mp4?dl=1" class="videolink">Windows 95 Start Me Up</a></p>
+            
+            </details>
+            <hr>
+            <details>
+                <summary><b>Foods and snacks</b></summary>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/5mo86za7qv5xqm5/Chex%20Quest.mp4?dl=1" class="videolink">Chex Quest</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/m5cq14sfhfjaxdj/Diet%20Coke%20Batman%20Returns.mp4?dl=1" class="videolink">Diet Coke Batman</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/vrkgjr02uwe7e1b/Kinder%20Surprise.mp4?dl=1" class="videolink">Kinder Surprise</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/w2zboynx599gfqx/McDonald%27s%20Sonic%20.mp4?dl=1" class="videolink">McDonald's Sonic</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/fwjtmqzjq48j6o3/Pepsi.mp4?dl=1" class="videolink">Pepsi</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/sspszi7fe2lxz56/Pizza%20Hut%20Pizza%20Head.mp4?dl=1" class="videolink">Pizza Hut Pizza Head</a></p>
+            
+            </details>
+            <hr>
+            <details>
+                <summary><b>Kid's shows</b></summary>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/tr25zn5wue19ogz/BeetleBorgs.mp4?dl=1" class="videolink">BeetleBorgs</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/gwcc7amskzz2x2i/Dexter%27s%20Laboratory.mp4?dl=1" class="videolink">Dexter's Laboratory</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/3hmmtm69a2imzd1/Digimon.mp4?dl=1" class="videolink">Digimon</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/hiklbtqrqhiu5t6/Pokemon.mp4?dl=1" class="videolink">Pokemon</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/sglsh7lt6775zbp/Power%20Rangers.mp4?dl=1" class="videolink">Power Rangers</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/gagiz9toqwu0f42/Powerpuff%20Girls.mp4?dl=1" class="videolink">Powerpuff Girls</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/gd1djgvjpn9v0gr/Saint%20Seiya.mp4?dl=1" class="videolink">Saint Seiya</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/9khphlo4hyxkzd0/Spiderman.mp4?dl=1" class="videolink">Spiderman</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/r990wjf85vm51y7/X-Men.mp4?dl=1" class="videolink">X-Men</a></p>
+            
+            </details>
+            <hr>   
+            <details>
+                <summary><b>Toy commercials</b></summary>
+                       
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/yilkqe7qyivhfx6/BeetleBorgs%20figures.mp4?dl=1" class="videolink">BeetleBorgs figures</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/7cabzaqacsdicem/Digimon%20LCD.mp4?dl=1" class="videolink">Digimon LCD</a></p>
+
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/r85srnph2543xfq/HeroQuest.mp4?dl=1" class="videolink">HeroQuest</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/xbpmhagi7mgvnzq/Hot Wheels Volcano Blowout.mp4?dl=1" class="videolink">Hot Wheels</a></p>
+
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/ki56wi0wshsl1fu/Lego%20Mania.mp4?dl=1" class="videolink">LEGO Mania</a></p>
+                
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/oaac5apxtnh1rsw/Magic%20The%20Gathering%20Rhox.mp4?dl=1" class="videolink">Magic The Gathering</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/0r2izlcq5q82wj7/Magic%20Works%20Spirit%20In%20The%20Coffin.mp4?dl=1" class="videolink">Magic Works</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/r4ejggy2i9dbn6i/Micro%20Machines%20Exploration.mp4?dl=1" class="videolink">Micro Machines</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/y8sbg8sztxpfbkj/Pokemon Yellow.mp4?dl=1" class="videolink">Pokemon Yellow</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/dovp9ff7hyhuu4t/Power%20Rangers%20Megazord.mp4?dl=1" class="videolink">Power Rangers Megazord</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/33t14yjgbcy2dou/Simon.mp4?dl=1" class="videolink">Simon</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/dlqyg481j4ujiio/Star%20Trek%20Next%20Generation%20toys.mp4?dl=1" class="videolink">Star Trek toys</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/ttvc01dk428ihe6/WWF%20figures.mp4?dl=1" class="videolink">WWF figures</a></p>
+
+        </details>
+        <hr>    
+        <details>
+                <summary><b>Portuguese ads</b></summary>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/cgshz82lcv8ly64/Crunch.mp4?dl=1" class="videolink">Crunch</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/6k9kqnrs7or3jm2/Donuts.mp4?dl=1" class="videolink">Donuts</a></p>
+
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/3t9bv5bf7k9zb0p/Ferrero%20Rocher.mp4?dl=1" class="videolink">Ferrero Rocher</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/0v5h27bdjzid2yy/McDonald%27s.mp4?dl=1" class="videolink">McDonald's</a></p>
+
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/9q09peh9sncd73w/Playstation.mp4?dl=1" class="videolink">Playstation</a></p>
+                
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/a31sj1453hfqs9l/Pringles.mp4?dl=1" class="videolink">Pringles</a></p>
+            
+                <p><a href="#television" data-videolink="https://dl.dropboxusercontent.com/s/uc5wzqt65k5txsy/Sega%20MegaDrive.mp4?dl=1" class="videolink">SEGA MegaDrive</a></p>
+            
+        </details>
+        <hr>
+            </div>
+            </div> 
+            <br>
+            <br>
+         </div>
+            
+        <!--Footer---------------------------------------------------->
+            <div id="footer" style="padding-left: 0; padding-top: 0;">
+                <p style="font-size: small">© 1995 The ALF95 Company - Because I have nothing better to do</p>
+            </div>
+<!------------------------------------------------------------>
+        <script type="text/javascript" src="js/videochanger.js"></script>
+    </body>
+</html>

@@ -149,7 +149,6 @@ audio {
 #gamesimgleft {
     width: 48%;
     float: left;
-    
 }
 
 #gamesimgright {
@@ -216,11 +215,10 @@ audio {
 #aboutme {
     overflow: auto;
     margin: 10%;
-    background-color: white;
+    background-color: #ffffd4;
     border: 10px ridge grey;
     min-height: 500px;
     width: 60%;
-    background-image: url(images/windowshelpbackground.png);
     background-size: 10px;
 }
 
@@ -229,28 +227,17 @@ audio {
     padding: 5%;
 }
 
-/*Contact Me-----------------------------------*/
-#contactme {
+/*ALF95 TV-------------------------------------*/
+#alf95tv {
     margin-left: 25%;
-    background-color: white;
+    background-color: #c0c0c0;
     border: 10px ridge grey;
     min-height: 200px;
     width: 60%;
-}
-
-#contactmecontent {
-    overflow: auto;
     text-align: center;
 }
 
-form {
-    padding-bottom: 5%;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/*Downloads-------------------------------------*/
+/*Downloads------------------------------------*/
 #downloads {
     margin: 8%;
     background-color: white;
@@ -272,7 +259,7 @@ form {
     margin: 1%;
     min-height: 50px;
     min-width: 100px;
-    vertical-align:middle
+    vertical-align: middle;
     
 }
 
